@@ -1,0 +1,6 @@
+C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\appsettings.json
+C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\eLibrary.UI.csproj.CoreCompileInputs.cache
+C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\eLibrary.UI.AssemblyInfoInputs.cache
+C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\eLibrary.UI.AssemblyInfo.cs

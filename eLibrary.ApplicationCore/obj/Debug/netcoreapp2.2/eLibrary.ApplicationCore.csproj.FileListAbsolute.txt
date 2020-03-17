@@ -1,0 +1,9 @@
+C:\dotnetdev\Newbies\eLibrary.ApplicationCore\bin\Debug\netcoreapp2.2\eLibrary.ApplicationCore.deps.json
+C:\dotnetdev\Newbies\eLibrary.ApplicationCore\bin\Debug\netcoreapp2.2\eLibrary.ApplicationCore.dll
+C:\dotnetdev\Newbies\eLibrary.ApplicationCore\obj\Debug\netcoreapp2.2\eLibrary.ApplicationCore.csprojAssemblyReference.cache
+C:\dotnetdev\Newbies\eLibrary.ApplicationCore\obj\Debug\netcoreapp2.2\eLibrary.ApplicationCore.csproj.CoreCompileInputs.cache
+C:\dotnetdev\Newbies\eLibrary.ApplicationCore\obj\Debug\netcoreapp2.2\eLibrary.ApplicationCore.AssemblyInfoInputs.cache
+C:\dotnetdev\Newbies\eLibrary.ApplicationCore\obj\Debug\netcoreapp2.2\eLibrary.ApplicationCore.AssemblyInfo.cs
+C:\dotnetdev\Newbies\eLibrary.ApplicationCore\bin\Debug\netcoreapp2.2\eLibrary.ApplicationCore.pdb
+C:\dotnetdev\Newbies\eLibrary.ApplicationCore\obj\Debug\netcoreapp2.2\eLibrary.ApplicationCore.dll
+C:\dotnetdev\Newbies\eLibrary.ApplicationCore\obj\Debug\netcoreapp2.2\eLibrary.ApplicationCore.pdb
