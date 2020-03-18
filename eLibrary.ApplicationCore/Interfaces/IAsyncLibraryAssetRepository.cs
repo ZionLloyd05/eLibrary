@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace eLibrary.ApplicationCore.Interfaces
 {
-    public interface IAsyncLibraryAssetRepository
+    public interface IAsyncLibraryAssetRepository : IAsyncRepository<LibraryAsset>
     {
-        Task<string> GetAuthorOrDirector(int id);
-        Task<string> GetDeweyIndex(int id);
-        Task<string> GetType(int id);
-        Task<string> GetTitle(int id);
-        Task<string> GetIsbn(int id);
+        string GetAuthorOrDirector(int id);
+        string GetDeweyIndex(int id);
+        string GetType(int id);
+        string GetTitle(int id);
+        string GetIsbn(int id);
 
-        Task<LibraryBranch> GetCurrentLocation(int id);
+        LibraryBranch GetCurrentLocation(int id);
     }
 }

@@ -5,6 +5,13 @@ C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\0.eLibrary.UI.deps.json
 C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\0.eLibrary.UI.runtimeconfig.json
 C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\0.eLibrary.UI.runtimeconfig.dev.json
 C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\0.eLibrary.UI.dll
+C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\0.eLibrary.UI.pdb
+C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\0.eLibrary.UI.Views.dll
+C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\0.eLibrary.UI.Views.pdb
+C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\eLibrary.ApplicationCore.dll
+C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\eLibrary.Infrastructure.dll
+C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\eLibrary.ApplicationCore.pdb
+C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\eLibrary.Infrastructure.pdb
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.csprojAssemblyReference.cache
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.csproj.CoreCompileInputs.cache
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.RazorAssemblyInfo.cache
@@ -14,6 +21,7 @@ C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.AssemblyI
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.TagHelpers.input.cache
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.TagHelpers.output.cache
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.RazorCoreGenerate.cache
+C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Catalog\Index.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
@@ -24,14 +32,8 @@ C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImport
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.RazorTargetAssemblyInfo.cache
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.RazorTargetAssemblyInfo.cs
-C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\0.eLibrary.UI.pdb
-C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\0.eLibrary.UI.Views.dll
-C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\0.eLibrary.UI.Views.pdb
-C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\eLibrary.ApplicationCore.dll
-C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\eLibrary.Infrastructure.dll
-C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\eLibrary.Infrastructure.pdb
-C:\dotnetdev\Newbies\eLibrary.UI\bin\Debug\netcoreapp2.2\eLibrary.ApplicationCore.pdb
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.Views.pdb
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.csproj.CopyComplete
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.dll
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.pdb
+C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Catalog\Detail.cshtml.g.cs

@@ -11,8 +11,8 @@ namespace eLibrary.ApplicationCore.Specifications
         public LibraryAssetsWithLocationAndStatus()
            : base(null)
         {
-            AddInclude(l => l.Location);
-            AddInclude(l => l.Status);
+            AddInclude(asset => asset.Location);
+            AddInclude(asset => asset.Status);
         }
     }
 }

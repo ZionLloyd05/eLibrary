@@ -9,10 +9,10 @@ namespace eLibrary.ApplicationCore.Specifications
     public sealed class LibraryAssetWithLocationAndStatus : BaseSpecification<LibraryAsset>
     {
         public LibraryAssetWithLocationAndStatus(int? assetId)
-           : base(l => l.Id == assetId)
+           : base(asset => asset.Id == assetId)
         {
-            AddInclude(l => l.Location);
-            AddInclude(l => l.Status);
+            AddInclude(asset => asset.Location);
+            AddInclude(asset => asset.Status);
         }
     }
 }

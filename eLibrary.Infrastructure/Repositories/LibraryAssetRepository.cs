@@ -3,44 +3,75 @@ using eLibrary.ApplicationCore.Interfaces;
 using eLibrary.Infrastructure.Data;
 using eLibrary.Infrastructure.Repositories;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
-namespace LibraryServices
+namespace eLibrary.Infrastructure.Repositories
 {
     public class LibraryAssetRepository : LibraryRepository<LibraryAsset>, IAsyncLibraryAssetRepository
     {
+        private readonly eLibraryContext _ctx;
+
         public LibraryAssetRepository(eLibraryContext ctx) : base(ctx)
         {
+            _ctx = ctx;
         }
 
-        public Task<string> GetAuthorOrDirector(int id)
+        public string GetAuthorOrDirector(int id)
         {
-            throw new NotImplementedException();
+            var isBook = _ctx.LibraryAssets.OfType<Book>()
+                .Where(asset => asset.Id == id).Any();
+
+            var isVideo = _ctx.LibraryAssets.OfType<Video>()
+                .Where(asset => asset.Id == id).Any();
+
+            return isBook ?
+                _ctx.Books.FirstOrDefault(book => book.Id == id).Author :
+                _ctx.Videos.FirstOrDefault(video => video.Id == id).Director
+                ?? "Unknown";
         }
 
-        public Task<LibraryBranch> GetCurrentLocation(int id)
+        public LibraryBranch GetCurrentLocation(int id)
         {
-            throw new NotImplementedException();
+            var asset = _ctx.LibraryAssets.FirstOrDefault(a => a.Id == id);
+
+            return asset.Location;
         }
 
-        public Task<string> GetDeweyIndex(int id)
+        public string GetDeweyIndex(int id)
         {
-            throw new NotImplementedException();
+            if (_ctx.Books.Any(book => book.Id == id))
+                {
+                    return _ctx.Books
+                        .FirstOrDefault(book => book.Id == id).DeweyIndex;
+                }
+            else
+                    return "";
         }
 
-        public Task<string> GetIsbn(int id)
+        public string GetIsbn(int id)
         {
-            throw new NotImplementedException();
+            if (_ctx.Books.Any(book => book.Id == id))
+            {
+                return _ctx.Books
+                    .FirstOrDefault(book => book.Id == id).ISBN;
+            }
+            else
+                return "";
         }
 
-        public Task<string> GetTitle(int id)
+        public string GetTitle(int id)
         {
-            throw new NotImplementedException();
+            return _ctx.LibraryAssets
+                .FirstOrDefault(a => a.Id == id).Title;
         }
 
-        public Task<string> GetType(int id)
+        public string GetType(int id)
         {
-            throw new NotImplementedException();
+            var book = _ctx.LibraryAssets.OfType<Book>()
+                .Where(b => b.Id == id);
+
+            return book.Any() ? "Book" : "Video";
         }
     }
 }

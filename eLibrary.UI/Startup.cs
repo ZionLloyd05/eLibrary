@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using eLibrary.ApplicationCore.Interfaces;
 using eLibrary.Infrastructure.Data;
+using eLibrary.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -25,13 +27,16 @@ namespace eLibrary.UI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<eLibraryContext>(opts =>
+            {
+                opts.UseSqlServer(Configuration.GetConnectionString("LibraryConnection"));
+            });
+            services.AddScoped(typeof(IAsyncRepository<>), typeof(LibraryRepository<>));
+            services.AddScoped<IAsyncLibraryAssetRepository, LibraryAssetRepository>();
+
             services.Configure<CookiePolicyOptions>(options =>
             {
-                services.AddDbContext<eLibraryContext>(opts =>
-                {
-                    opts.UseSqlServer(Configuration.GetConnectionString("LibraryConnection"));
-                });
-
+               
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
