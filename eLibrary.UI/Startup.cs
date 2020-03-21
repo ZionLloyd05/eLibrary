@@ -33,14 +33,15 @@ namespace eLibrary.UI
             });
             services.AddScoped(typeof(IAsyncRepository<>), typeof(LibraryRepository<>));
             services.AddScoped<IAsyncLibraryAssetRepository, LibraryAssetRepository>();
+            services.AddScoped<ICheckout, CheckoutRepository>();
 
-            services.Configure<CookiePolicyOptions>(options =>
-            {
+            //services.Configure<CookiePolicyOptions>(options =>
+            //{
                
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
+            //    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+            //    options.CheckConsentNeeded = context => true;
+            //    options.MinimumSameSitePolicy = SameSiteMode.None;
+            //});
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

@@ -20,14 +20,14 @@ namespace eLibrary.UI.Models.Catalog
         public string CurrentLocation { get; set; }
         public string ImageUrl { get; set; }
         public string PatronName { get; set; }
-        public Checkout LatestCheckout { get; set; }
+        public ApplicationCore.Entities.Checkout LatestCheckout { get; set; }
         public IEnumerable<CheckoutHistory> CheckoutHistories { get; set; }
-        public IEnumerable<AssetHoldModel> AssetHoldModels { get; set; }
+        public IEnumerable<AssetHoldModel> CurrentHolds { get; set; }
     }
 
     public class AssetHoldModel
     {
-        public string Patron { get; set; }
+        public string PatronName { get; set; }
         public string HoldPlaced { get; set; }
     }
 }
