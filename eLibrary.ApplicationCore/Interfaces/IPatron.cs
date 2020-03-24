@@ -10,5 +10,6 @@ namespace eLibrary.ApplicationCore.Interfaces
         IEnumerable<CheckoutHistory> GetCheckoutHistory(int patronId);
         IEnumerable<Hold> GetHolds(int patronId);
         IEnumerable<Checkout> GetCheckouts(int id);
+        Patron GetPatron(int patronId);
     }
 }

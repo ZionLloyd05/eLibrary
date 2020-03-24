@@ -6,3 +6,4 @@ C:\dotnetdev\Newbies\eLibrary.ApplicationCore\obj\Debug\netcoreapp2.2\eLibrary.A
 C:\dotnetdev\Newbies\eLibrary.ApplicationCore\obj\Debug\netcoreapp2.2\eLibrary.ApplicationCore.AssemblyInfo.cs
 C:\dotnetdev\Newbies\eLibrary.ApplicationCore\obj\Debug\netcoreapp2.2\eLibrary.ApplicationCore.dll
 C:\dotnetdev\Newbies\eLibrary.ApplicationCore\obj\Debug\netcoreapp2.2\eLibrary.ApplicationCore.pdb
+C:\dotnetdev\Newbies\eLibrary.ApplicationCore\obj\Debug\netcoreapp2.2\eLibrary.ApplicationCore.csprojAssemblyReference.cache

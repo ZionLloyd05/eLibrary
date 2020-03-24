@@ -1,8 +1,10 @@
 ﻿using eLibrary.ApplicationCore.Entities;
 using eLibrary.ApplicationCore.Interfaces;
 using eLibrary.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace eLibrary.Infrastructure.Repositories
@@ -18,17 +20,41 @@ namespace eLibrary.Infrastructure.Repositories
 
         public IEnumerable<CheckoutHistory> GetCheckoutHistory(int patronId)
         {
-            throw new NotImplementedException();
+            var cardId = GetPatron(patronId).LibraryCard.Id;
+
+            return _ctx.CheckoutHistories
+                .Include(co => co.LibraryCard)
+                .Include(co => co.LibraryAsset)
+                .Where(co => co.LibraryCard.Id == cardId)
+                .OrderByDescending(co => co.CheckedOut);
         }
 
-        public IEnumerable<Checkout> GetCheckouts(int id)
+        public IEnumerable<Checkout> GetCheckouts(int patronId)
         {
-            throw new NotImplementedException();
+            var cardId = GetPatron(patronId).LibraryCard.Id;
+
+            return _ctx.Checkouts
+                .Include(co => co.LibraryCard)
+                .Include(co => co.LibraryAsset)
+                .Where(co => co.LibraryCard.Id == cardId);
         }
 
         public IEnumerable<Hold> GetHolds(int patronId)
         {
-            throw new NotImplementedException();
+            var cardId = GetPatron(patronId).LibraryCard.Id;
+
+            return _ctx.Holds
+                .Include(h => h.LibraryCard)
+                .Include(h => h.LibraryAsset)
+                .Where(h => h.LibraryCard.Id == cardId)
+                .OrderByDescending(h => h.HoldPlaced);
+        }
+
+        public Patron GetPatron(int patronId)
+        {
+            return _ctx.Patrons
+                .Include(patron => patron.LibraryCard)
+                .FirstOrDefault(patron => patron.Id == patronId);
         }
     }
 }

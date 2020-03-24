@@ -267,3 +267,7 @@ body {
     color: #2f6fc7;
     font-weight: bold;
 }
+
+#patronIndexTable tbody td {
+    text-align: center;
+}

@@ -39,3 +39,4 @@ C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.Views.pdb
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.csproj.CopyComplete
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.dll
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.pdb
+C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Patron\Index.cshtml.g.cs
