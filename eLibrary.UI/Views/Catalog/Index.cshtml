@@ -3,12 +3,12 @@
 <div id="assets">
     <h3>Library Catalog</h3>
     <div id="assetsTable">
-        <table class="table table-striped" id="catalogIndexTable">
+        <table  class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" id="catalogIndexTable">
             <thead>
                 <tr>
-                    <th>Image</th>
-                    <th>Title</th>
-                    <th>Author / Director</th>
+                    <th class="mdl-data-table__cell--non-numeric">Image</th>
+                    <th class="mdl-data-table__cell--non-numeric">Title</th>
+                    <th class="mdl-data-table__cell--non-numeric">Author / Director</th>
                     <th>Dewey Call Number</th>
                 </tr>
             </thead>
@@ -16,15 +16,15 @@
                 @foreach (var asset in Model.Assets)
                 {
                 <tr class="assetRow">
-                    <td class="">
+                    <td class="mdl-data-table__cell--non-numeric">
                         <div>
                             <a asp-controller="Catalog" asp-action="Detail" asp-route-id="@asset.Id">
                                 <img style="width:20%;" src="@asset.ImageUrl" class="imageCell" />
                             </a>
                         </div>
                     </td>
-                    <td class="">@asset.Title</td>
-                    <td class="">@asset.AuthorOrDirector</td>
+                    <td  class="mdl-data-table__cell--non-numeric">@asset.Title</td>
+                    <td  class="mdl-data-table__cell--non-numeric">@asset.AuthorOrDirector</td>
                     <td class="">@asset.DeweyCallNumber</td>
                 </tr>
                 }

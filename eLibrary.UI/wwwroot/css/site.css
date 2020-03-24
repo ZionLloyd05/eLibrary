@@ -1,6 +1,8 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-
+a:hover {
+    text-decoration: none;
+}
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -84,7 +86,7 @@ body {
 }
 
 .splash {
-    background-image: url("/images/catalog.png");
+    background-image: url("/images/catalog.jpg");
     background-repeat: no-repeat;
     min-height: 200px;
 }
@@ -125,23 +127,29 @@ body {
 }
 
 #catalog {
-    background: url('/images/books.jpg') bottom right 15% no-repeat #555;
+    background: url('/images/books.jpg');
+    background-size: cover;
 }
 
 #catalogIndexTable {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
-    #catalogIndexTable td {
-        vertical-align: middle;
-    }
+/*#catalogIndexTable td {
+    vertical-align: middle;
+}*/
 
-    #catalogIndexTable tr:hover {
-        background-color: #eee;
-    }
+#catalogIndexTable tr:hover {
+    background-color: #eee;
+}
+
+#catalogIndexTable th {
+    text-align: center;
+}
 
 #patrons {
-    background: url('/images/patron.jpeg') bottom left 15% no-repeat #555;
+    background: url('/images/patron.jpg');
+    background-size: cover;
 }
 
 .branchInfo {
@@ -149,7 +157,8 @@ body {
 }
 
 #branches {
-    background: url('/images/bldg.jpeg') bottom right 15% no-repeat #555;
+    background: url('/images/bldg.jpg');
+    background-size: cover;
 }
 
 #assets {
@@ -192,31 +201,31 @@ body {
 }
 
 #itemTitle {
-    font-size: 2.3em;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #itemAuthor {
-    font-size: 1.6em;
+    font-size: 16px;
 }
 
 #itemStatus {
-    font-weight: bold;
-    font-size: 1.3em;
+    font-size: 14px;
 }
 
 #itemType {
-    font-size: 1.6em;
+    font-size: 14px;
     color: #888;
 }
 
 .itemLabel {
-    font-weight: bold;
+    
 }
 
 
 .itemValue {
     text-align: right;
-    font-size: 0.8em;
+    font-size: 13px;
 }
 
 .availability {
@@ -231,7 +240,7 @@ body {
 
 .detailInfo {
     padding: 10px;
-    font-size: 1.3em;
+    font-size: 1em;
     color: #555;
 }
 

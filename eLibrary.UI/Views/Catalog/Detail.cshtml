@@ -23,7 +23,7 @@
                 {
                     <p>This item has been lost. It cannot be checked out</p>
                     <p>
-                        <a class="btn btn-lg btn-danger"
+                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-danger"
                            role="button"
                            asp-controller="Catalog"
                            asp-action="MarkFound"
@@ -35,14 +35,14 @@
                 {
                     <p id="itemPatron">Checked Out By: @Model.PatronName</p>
                     <p>
-                        <a class="btn btn-lg btn-info"
+                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-info"
                            role="button"
                            asp-controller="Catalog"
                            asp-action="CheckIn"
                            asp-route-id="@Model.AssetId">Check In</a>
                     </p>
                     <p>
-                        <a class="btn btn-lg btn-warning"
+                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-warning"
                            role="button"
                            asp-controller="Catalog"
                            asp-action="Hold"
@@ -53,7 +53,7 @@
                 @if (Model.Status == "Available")
                 {
                     <p>
-                        <a class="btn btn-lg btn-info"
+                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-info"
                            role="button"
                            asp-controller="Catalog"
                            asp-action="Checkout"
@@ -65,7 +65,7 @@
 
         </div>
         <div class="col-md-4 detailInfo">
-            <table>
+            <table  >
                 <tr>
                     <td class="itemLabel">ISBN: </td>
                     <td class="itemValue">@Model.ISBN</td>
@@ -85,7 +85,7 @@
 <div class="row">
     <div class="col-lg-6">
         <h4>Checkout History</h4>
-        <table class="table table-bordered table-hover table-condensed">
+        <table   class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" >
             <thead>
                 <tr>
                     <th>Date Loaned</th>
@@ -113,7 +113,7 @@
     </div>
     <div class="col-lg-6">
         <h4>Current Holds</h4>
-        <table class="table table-bordered table-hover table-condensed">
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" >
             <thead>
                 <tr>
                     <th>Hold Placed</th>
