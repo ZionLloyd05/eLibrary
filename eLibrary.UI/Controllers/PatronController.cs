@@ -8,5 +8,9 @@ namespace eLibrary.UI.Controllers
 {
     public class PatronController : Controller
     {
+        public PatronController()
+        {
+
+        }
     }
 }
