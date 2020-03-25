@@ -35,6 +35,7 @@ namespace eLibrary.UI
             services.AddScoped<IAsyncLibraryAssetRepository, LibraryAssetRepository>();
             services.AddScoped<ICheckout, CheckoutRepository>();
             services.AddScoped<IPatron, PatronRepository>();
+            services.AddScoped<ILibraryBranch, LibraryBranchRepository>();
 
             //services.Configure<CookiePolicyOptions>(options =>
             //{

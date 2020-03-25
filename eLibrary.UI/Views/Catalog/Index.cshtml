@@ -1,9 +1,14 @@
 ﻿@model eLibrary.UI.Models.Catalog.AssetIndexModel
 
+
+@{
+    ViewBag.Title = "Catalog Index";
+}
+
 <div id="assets">
     <h3>Library Catalog</h3>
     <div id="assetsTable">
-        <table  class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" id="catalogIndexTable">
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" id="catalogIndexTable">
             <thead>
                 <tr>
                     <th class="mdl-data-table__cell--non-numeric">Image</th>
@@ -15,18 +20,18 @@
             <tbody>
                 @foreach (var asset in Model.Assets)
                 {
-                <tr class="assetRow">
-                    <td class="mdl-data-table__cell--non-numeric">
-                        <div>
-                            <a asp-controller="Catalog" asp-action="Detail" asp-route-id="@asset.Id">
-                                <img style="width:20%;" src="@asset.ImageUrl" class="imageCell" />
-                            </a>
-                        </div>
-                    </td>
-                    <td  class="mdl-data-table__cell--non-numeric">@asset.Title</td>
-                    <td  class="mdl-data-table__cell--non-numeric">@asset.AuthorOrDirector</td>
-                    <td class="">@asset.DeweyCallNumber</td>
-                </tr>
+                    <tr class="assetRow">
+                        <td class="mdl-data-table__cell--non-numeric">
+                            <div>
+                                <a asp-controller="Catalog" asp-action="Detail" asp-route-id="@asset.Id">
+                                    <img style="width:20%;" src="@asset.ImageUrl" class="imageCell" />
+                                </a>
+                            </div>
+                        </td>
+                        <td class="mdl-data-table__cell--non-numeric">@asset.Title</td>
+                        <td class="mdl-data-table__cell--non-numeric">@asset.AuthorOrDirector</td>
+                        <td class="">@asset.DeweyCallNumber</td>
+                    </tr>
                 }
             </tbody>
         </table>

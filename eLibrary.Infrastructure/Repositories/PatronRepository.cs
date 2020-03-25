@@ -36,7 +36,7 @@ namespace eLibrary.Infrastructure.Repositories
             return _ctx.Checkouts
                 .Include(co => co.LibraryCard)
                 .Include(co => co.LibraryAsset)
-                .Where(co => co.LibraryCard.Id == cardId);
+                .Where(co => co.LibraryCard.Id == cardId).ToList();
         }
 
         public IEnumerable<Hold> GetHolds(int patronId)

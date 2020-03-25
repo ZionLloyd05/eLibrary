@@ -21,12 +21,16 @@ C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.AssemblyI
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.TagHelpers.input.cache
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.TagHelpers.output.cache
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.RazorCoreGenerate.cache
+C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Branch\Detail.cshtml.g.cs
+C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Branch\Index.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Catalog\Checkout.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Catalog\Detail.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Catalog\Hold.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Catalog\Index.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Patron\Detail.cshtml.g.cs
+C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Patron\Index.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -39,4 +43,3 @@ C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.Views.pdb
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.csproj.CopyComplete
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.dll
 C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\0.eLibrary.UI.pdb
-C:\dotnetdev\Newbies\eLibrary.UI\obj\Debug\netcoreapp2.2\Razor\Views\Patron\Index.cshtml.g.cs

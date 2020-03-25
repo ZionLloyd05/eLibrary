@@ -56,9 +56,9 @@ namespace eLibrary.UI.Controllers
                 OverdueFees = patron.LibraryCard?.Fees,
                 LibraryCardId = patron.LibraryCard?.Id,
                 Telephone = string.IsNullOrEmpty(patron.TelephoneNumber) ? "No Telephone Number Provided" : patron.TelephoneNumber,
-                AssetsCheckedOut = _patron.GetCheckouts(id).ToList(),
+                AssetsCheckedOut = _patron.GetCheckouts(id),
                 CheckoutHistory = _patron.GetCheckoutHistory(id),
-                Holds = _patron.GetHolds(id)
+                Holds = _patron.GetHolds(id).ToList()
             };
 
             return View(patronModel);
